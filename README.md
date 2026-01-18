@@ -1,6 +1,6 @@
 # nz-feed
 
-Hey everyone. This feed is more popular than I expected (thank you! glad people like it) and I want to be super trasnparent about what's being shown and what isn't. I said from the start I would mute politics until I come up with a better system to manage the despair:fun ratio. Any political mutes here are a result of that.
+Hey everyone. This feed is more popular than I expected (thank you! glad people like it) and I want to be super transparent about what's being shown and what isn't. I said from the start I would mute politics until I come up with a better system to manage the despair:fun ratio. Any political mutes here are a result of that.
 
 Inclusion terms:
 Aotearoa,
