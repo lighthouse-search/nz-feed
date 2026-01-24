@@ -153,7 +153,7 @@ async fn describe_feed_generator() -> impl IntoResponse {
         did: "did:web:seer.oracularhades.com".to_string(),  // Replace with your actual DID
         feeds: vec![
             FeedDescription {
-                uri: "at://did:web:seer.oracularhades.com/app.bsky.feed.generator/custom-feed".to_string(),
+                uri: "at://did:web:seer.oracularhades.com/app.bsky.feed.generator/nzseertest".to_string(),
                 cid: None,
             }
         ],
@@ -313,7 +313,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Build the Axum router
     let app = Router::new()
         .route("/.well-known/did.json", get(handle_did_document))
-        // .route("/xrpc/app.bsky.feed.describeFeedGenerator", get(describe_feed_generator))
+        .route("/xrpc/app.bsky.feed.describeFeedGenerator", get(describe_feed_generator))
         .route("/xrpc/app.bsky.feed.getFeedSkeleton", get(get_feed_skeleton))
         .layer(CorsLayer::permissive());
 
