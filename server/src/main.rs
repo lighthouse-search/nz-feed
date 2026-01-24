@@ -139,7 +139,7 @@ async fn handle_did_document() -> impl IntoResponse {
         "id": "did:web:seer.oracularhades.com",  // Replace with your actual domain
         "service": [{
             "id": "#bsky_fg",
-            "type": "Seer feed generator",
+            "type": "BskyFeedGenerator",
             "serviceEndpoint": "https://seer.oracularhades.com"  // Replace with your actual endpoint
         }]
     });
