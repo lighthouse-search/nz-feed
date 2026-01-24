@@ -25,17 +25,7 @@ build:
 	mkdir $(BASE)/release
 	apt-get update -y && \
 		apt-get install -y build-essential curl file git unzip && \
-		curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash && \
-		. "$$HOME/.nvm/nvm.sh" && \
-		nvm install 22 && \
-		node -v && \
-		npm -v && \
-		cd $(BASE)/server/frontend && \
-		npm install && \
-		npm run build
 	mv $(BASE)/server/target/release/guard-server $(BASE)/release
-	mkdir $(BASE)/release/frontend/
-	mv $(BASE)/server/frontend/_static $(BASE)/release/frontend/_static
 
 	mkdir $(BASE)/release/example
 	mv $(BASE)/example/email-config.toml $(BASE)/release/example/email-config.toml
