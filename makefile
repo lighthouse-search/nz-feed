@@ -26,5 +26,6 @@ build:
 	apt-get update -y && \
 		apt-get install -y build-essential curl file git unzip && \
 	mv $(BASE)/server/target/release/seer-server $(BASE)/release
+	mv $(BASE)/server/filters.json $(BASE)/release
 
 	cd $(BASE)/release && zip -r ../seer.zip .
