@@ -153,7 +153,7 @@ async fn describe_feed_generator() -> impl IntoResponse {
         did: "did:web:seer.oracularhades.com".to_string(),  // Replace with your actual DID
         feeds: vec![
             FeedDescription {
-                uri: "at://did:web:seer.oracularhades.com/app.bsky.feed.generator/nzseertest".to_string(),
+                uri: "at://did:plc:wtdzzfgzjpirnk5wvpjutqoy/app.bsky.feed.generator/nzseertest".to_string(),
                 cid: None,
             }
         ],
