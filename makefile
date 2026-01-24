@@ -25,10 +25,10 @@ build:
 	mkdir $(BASE)/release
 	apt-get update -y && \
 		apt-get install -y build-essential curl file git unzip && \
-	mv $(BASE)/server/target/release/guard-server $(BASE)/release
+	mv $(BASE)/server/target/release/seer-server $(BASE)/release
 
 	mkdir $(BASE)/release/example
 	mv $(BASE)/example/email-config.toml $(BASE)/release/example/email-config.toml
 	mv $(BASE)/example/oauth-config.toml $(BASE)/release/example/oauth-config.toml
 
-	cd $(BASE)/release && zip -r ../guard.zip .
+	cd $(BASE)/release && zip -r ../seer.zip .
