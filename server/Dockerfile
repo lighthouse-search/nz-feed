@@ -16,4 +16,5 @@ RUN usermod -s /bin/rbash kube
 # Run the application as kube user
 USER kube
 EXPOSE 8000
-CMD /builds/release/seer-server
+WORKDIR /builds/release
+CMD ./seer-server
